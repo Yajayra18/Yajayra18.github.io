@@ -68,7 +68,7 @@ h1 strong {
   object-fit: cover;
 }
 
-.portfolio {
+.experiencia {
   background: #E6F7FF;
   padding: 20px;
 
@@ -195,7 +195,7 @@ ul {
   color: white;
 }
 
-.event-list {
+.logros {
   display: flex;
   flex-wrap: wrap;
 }
