@@ -133,6 +133,11 @@ h1 strong {
   height: inherit;
 }
 
+.link:hover{
+  color:black;
+  font-weight: bold;
+}
+
 .header ol {
   display: flex;
   height: inherit;
