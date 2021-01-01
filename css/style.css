@@ -33,7 +33,7 @@ header {
   /*justify-content: center;*/
   width: 100%;
   min-width: 320px;
-  height: 500px;
+  min-height: 600px;
   text-align: center;
   background-color: var(--off-cyan);
 }
@@ -55,23 +55,62 @@ header {
   content: "  |  ";
 }
 
+.header--idiomas-container a:hover{
+  color: var(--cyan);
+  font-weight: bold;
+}
+.header--idiomas-container a:active{
+  color: var(--soft-cyan);
+  font-weight: bold;
+}
+
 .header--logo {
   width: 30%;
   min-width: 112px;
   max-width: 166px;
-  margin: 20px 0 ;
+  padding: 10px 0 ;
   align-self: center;
 }
 
 .header--navigator-container {
-
+  padding: 20px 0;
+  width: 100%;
 }
 
 .header--navigator-container a {
   color: var(--soft-cyan);
   text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.header--navigator-container a:hover{
+  font-weight: bold;
+}
+
+.header--navigator-container a:active{
+  
+  color: var(--cyan);
+  font-weight: bold;
 }
 
 .header--navigator-container a::after{
   content: "    |    ";
+}
+
+.header--presentacion-container {
+  width: 100%;
+  min-height: 160px;
+  background-color: var(--cyan);
+}
+
+.header--presentacion-container img {
+  position: absolute;
+  width: 90px;
+}
+
+.header--presentacion-container p {
+  width: 100%;
+  width: 300px;
+  
+  
 }
