@@ -27,24 +27,35 @@ html{
 }
 
 header {
-  position: relative;
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
+  text-align: center;
   width: 100%;
   min-width: 320px;
-  height: 500px;
-  text-align: center;
+  min-height: 450px;
   background-color: var(--off-cyan);
 }
 
-.header--idiomas-container {
-  padding: 10px;
+.header--foto-container {
   width: 100%;
-  height: 24px;
-  text-align: right;
 }
-  
+
+.header--foto-container img {
+  width: 100%;
+}
+
+.header--idiomas-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+.header--idiomas-container p {
+  text-align: right;
+  width: 95%;
+  font-size: 1.2rem;
+}
 
 .header--idiomas-container a{
   color: var(--soft-cyan);
@@ -52,24 +63,59 @@ header {
 }
 
 .header--idiomas-container a::after{
+  padding: 0 5px;
   content: "  |  ";
 }
 
-.header--logo {
+.header--idiomas-container a:hover{
+  color: var(--cyan);
+  font-weight: bold;
+}
+.header--idiomas-container a:active{
+  color: var(--soft-cyan);
+  font-weight: bold;
+}
+
+.header--logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 112px;
+}
+
+.header--logo-container img{
   width: 30%;
   min-width: 112px;
   max-width: 166px;
-  margin: 20px 0 ;
-  align-self: center;
 }
 
 .header--navigator-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+}
 
+.header--navigator-container ol {
+  list-style: none;
+  display: flex;
 }
 
 .header--navigator-container a {
   color: var(--soft-cyan);
   text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.header--navigator-container a:hover{
+  font-weight: bold;
+}
+
+.header--navigator-container a:active{
+  color: var(--cyan);
+  font-weight: bold;
 }
 
 .header--navigator-container a::after{
