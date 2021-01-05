@@ -189,7 +189,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   background-color: var(--cyan);
+}
+
+.under-construction img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 footer {
@@ -201,7 +208,7 @@ footer {
 
 .makelove {
   color: var(--cyan);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 
 }
