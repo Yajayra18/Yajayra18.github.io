@@ -185,4 +185,14 @@ header {
   box-shadow: 0px 4px 4px var(--off-cyan);
 }
 
+.under-construction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cyan);
+}
+
+.under-construction img {
+
+}
 
