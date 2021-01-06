@@ -267,6 +267,10 @@ footer {
   height: 50px;
 }
 
+.makelove {
+  padding-right: 20px;
+}
+
 .makelove p {
   display: inline-block;
   color: var(--cyan);
