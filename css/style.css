@@ -273,6 +273,7 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
 }
-.makelove img {
-  width: 15px;
+
+.fa-heart {
+  color: var(--cyan);
 }
