@@ -38,6 +38,7 @@ header {
 
 .header--foto-container {
   width: 100%;
+  height: 150px;
 }
 
 .header--foto-container img {
@@ -47,8 +48,8 @@ header {
 .header--idiomas-container {
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 30px;
+
+
 }
 
 .header--idiomas-container p {
@@ -81,13 +82,14 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 112px;
-}
+  min-height: 60px;
+  }
 
 .header--logo-container img{
-  width: 30%;
-  min-width: 112px;
-  max-width: 166px;
+  width: 15%;
+  min-width: 60px;
+  max-width: 150px;
+
 }
 
 .header--navigator-container {
