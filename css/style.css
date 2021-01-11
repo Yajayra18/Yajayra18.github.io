@@ -256,7 +256,7 @@ header {
 
 .summary-detail--title {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   width: 100%;
   min-width: 288px;
@@ -284,7 +284,7 @@ header {
   scroll-snap-align: center;
   flex-direction: column;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   min-width: 250px;
   max-width: 280px;
@@ -330,6 +330,10 @@ header {
 .fa-gem {
   color: var(--cyan);
   font-size: 40px;
+}
+
+.summary-detail--card span {
+  margin: 25px 0 0 5px
 }
 
 .under-construction {
