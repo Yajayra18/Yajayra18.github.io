@@ -272,9 +272,7 @@ header {
 
 .detail-cards--container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 800px;
   min-height: 350px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -288,8 +286,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
-  max-width: 250px;
+  min-width: 250px;
+  max-width: 280px;
   min-height: 280px;
   margin:0 15px;
   padding: 0 5px;
@@ -314,48 +312,25 @@ header {
 }
 
 .resumen-list{
+  max-width: 80%;
   line-height: 2rem;
   padding: 10px 0;
+
+}
+.fa-medal {
+  color: var(--cyan);
+  font-size: 40px;
 }
 
-
-/*
-.resum-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 55%;
-  height: 200px;
-  background-color: var(--off-gray);
-  color: var(--soft-cyan);
+.fa-university{
+  color: var(--cyan);
+  font-size: 40px;
 }
 
-.resumen-subtitle-time {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 50px;
+.fa-gem {
+  color: var(--cyan);
+  font-size: 40px;
 }
-
-.resumen-list {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-  height: 100px;
-  padding: 0 40px;
-}
-
-.resumen-list ul{
-  display: flex;
-  justify-items: center;
-  flex-direction: column;
-  width: 200px;
-}
-*/
 
 .under-construction {
   display: flex;
