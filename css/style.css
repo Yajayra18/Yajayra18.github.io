@@ -277,6 +277,7 @@ header {
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+  margin: 0 calc(0.5*(100vw - 250px));
 }
 
 .summary-detail--card {
@@ -286,13 +287,13 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  min-width: 250px;
-  max-width: 280px;
+  width: 250px;
   min-height: 280px;
-  margin:0 15px;
+  margin:0 30px 0 0;
   padding: 0 5px;
   background-color: var(--off-gray);
   border-radius:15px;
+  flex-shrink: 0;
 }
 
 .summary-title {
