@@ -247,6 +247,8 @@ header {
 */
 
 .main--summary-detail {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   min-width: 320px;
   min-height: 300px;
@@ -273,11 +275,11 @@ header {
 .detail-cards--container {
   display: flex;
   align-items: center;
+  width: 250px;
   min-height: 350px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
-  margin: 0 calc(0.5*(100vw - 250px));
 }
 
 .summary-detail--card {
@@ -294,6 +296,15 @@ header {
   background-color: var(--off-gray);
   border-radius:15px;
   flex-shrink: 0;
+}
+
+.detail-cards--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(0.5*(100vw - 250px));
+  color: var(--cyan);
+  font-size: 25px;
 }
 
 .summary-title {
