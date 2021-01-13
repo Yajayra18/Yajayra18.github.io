@@ -27,16 +27,16 @@
     <nav class="header--navigator-container">
       <ol>
         <li>
-          <a href="#Resumen">  Resumen  </a>
+          <a href="#resumen">  Resumen  </a>
         </li>
         <li>
-          <a href="#Experiencia">Experiencia</a>
+          <a href="#experiencia">Experiencia</a>
         </li>
         <li>
-          <a href="#Proyecto">Proyecto  </a>
+          <a href="#proyectos">Proyectos  </a>
         </li>
         <li>
-          <a href="#Contacto">Trabajemos juntos  </a>
+          <a href="#contacto">Trabajemos juntos  </a>
         </li>
       </ol>
     </nav>
@@ -58,7 +58,7 @@
     </div>
   </header>
   <main>
-    <section class="main--summary-detail">
+    <section id="resumen" class="main--summary-detail">
       <div class="summary-detail--title">
         <h2>Resumen</h2>
       </div>
@@ -119,7 +119,7 @@
         <i class="fas fa-chevron-right"></i>
       </span>
     </section>
-    <section class="main--experience-detail">
+    <section id="experiencia" class="main--experience-detail">
       <div class="experience-detail--title">
         <h2>Experiencia</h2>
       </div>
@@ -172,24 +172,45 @@
         <i class="fas fa-chevron-right"></i>
       </span>
     </section>
-    <section class="main--project-detail">
+    <section id="proyectos" class="main--project-detail">
       <div class="project-detail--title">
         <h2>Proyectos</h2>
       </div>
-      <span class="detail-cards--buttonProj">
+      <span class="detail-cards--buttonProj detail-cards--buttonProj--left">
         <i class="fas fa-chevron-left"></i>
       </span>
       <section class="project-cards--container">
         <article class="project-cards">
           <figure class="logo-container--proj">
+            <img src="./imagenes/icon/Proideas1.png" alt="Logo de Proideas">
+          </figure>
+          <p class="project-description">Creación de ProIdeas con el fin compartir herramientas para la inserción laboral</p>
+          <p class="project-fecha">Noviembre 2020</p>
+          <div class="project-container--social">
+            <a href="https://www.facebook.com/Proideas.asesoria/" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/team.proideas/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/proideas" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+          </div>
+        </article>
+        <article class="project-cards">
+          <figure class="logo-container--proj">
             <img src="./imagenes/icon/kpmg.png" alt="Logo de KPMG">
           </figure>
-          <p class="project-description">Feria Laboral en PUCP, representanto a KPMG</p>
+          <p class="project-description">Feria Laboral en la Pontificia Universidad Católica del Perú, representanto a KPMG</p>
           <p class="project-fecha">Septiembre 2017</p>
-          <img class="project-img" src="./imagenes/img/feriaKPMG.jpg" alt="Foto de Feria Laboral">
+          <figure class="project-container-img">
+            <img class="project-img" src="./imagenes/img/feriaKPMG.jpg" alt="Foto de Feria Laboral">
+          </figure>
         </article>
       </section>
-      <span class="detail-cards--buttonProj">
+      <span class="detail-cards--buttonProj detail-cards--buttonProj--right">
         <i class="fas fa-chevron-right"></i>
       </span>
 

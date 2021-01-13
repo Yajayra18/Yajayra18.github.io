@@ -12,6 +12,7 @@ Al agregar estilos, se acomoda por temas.
   --off-cyan:#233946;
   --off-gray: #4B6777;
   --soft-cyan: #CEEBEC;
+  --soft-cyan2: #9BDDDF;
   --cyan: #03989E;
 }
 
@@ -518,6 +519,14 @@ header {
   font-size: 25px;
 }
 
+.detail-cards--buttonProj--left {
+  justify-content: right;
+}
+
+.detail-cards--buttonProj--right {
+  justify-content: left;
+}
+
 .detail-cards--buttonProj i {
   color: var(--cyan);
   font-size: 25px;
@@ -528,7 +537,7 @@ header {
   align-items: center;
   width: 236px;
   min-height: 350px;
-  padding: 0 8px;
+  padding: 0 13px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
@@ -537,17 +546,26 @@ header {
 .project-cards {
   position: relative;
   display: flex;
+  padding-top: 45px;
   scroll-snap-align: center;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  width:220px;
-  height: 223px;
-  margin-right: 16px; 
-  padding: 0 15px;
-  background-color: var(--cyan);
+  width:210px;
+  height: 260px;
+  margin-right: 26px; 
+  background-color: var(--soft-cyan2);
   border-radius: 15px;
   flex-shrink: 0;
+}
+
+.project-cards:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -13px;
+  width: 13px;
+  height: 1px;
 }
 
 .logo-container--proj {
@@ -559,7 +577,7 @@ header {
   height: 80px;
   background: var(--soft-cyan);
   border-radius: 50px;
-  left: -40px;
+  left: -13px;
   top: -40px;
 }
 
@@ -570,20 +588,50 @@ header {
 .project-description, .project-fecha {
   width: 77%;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 15px;
 }
 
-.project-description {
-  font-weight: bold;
+.project-container-img {
+  display: flex;
+  width:100%;
+  height: auto;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+}
+.project-img {
+  width: 100%;
+  height:150px;
+  box-shadow: 0 4px 8px var(--off-cyan);
+  object-fit: cover;
 }
 
-.project-img {
-  position: absolute;
+.project-container--social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
-  height: auto;
-  border-radius: 15px;
+  height: 150px;
 }
+
+.project-container--social a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #242B7C;
+}
+
+.project-container--social i {
+  width: 20px;
+  height: 20px;
+  color: var(--soft-cyan2);
+  font-size: 20px;
+  text-align: center;
+}
+
 
 .under-construction {
   display: flex;
