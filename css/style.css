@@ -386,7 +386,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(0.5*(100vw - 240px));
+  width: calc(0.5*(100vw - 236px));
   font-size: 25px;
 }
 
@@ -403,13 +403,12 @@ header {
 .experience-cards--container {
   display: flex;
   align-items: center;
-  width: 240px;
+  width: 236px;
   min-height: 350px;
-  padding: 0 5px;
+  padding: 0 8px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
-  scroll-padding: 10px;
 }
 
 .experience-cards {
@@ -419,14 +418,23 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width:221px;
+  width:220px;
   height: 223px;
-  margin-right: 25px; 
+  margin-right: 16px; 
   padding: 0 15px;
   background-color: var(--cyan);
   border-radius: 15px;
   box-shadow: 0 4px 8px var(--off-cyan);
   flex-shrink: 0;
+}
+
+.experience-cards:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -8px;
+  width: 8px;
+  height: 1px;
 }
 
 .logo-container--card {

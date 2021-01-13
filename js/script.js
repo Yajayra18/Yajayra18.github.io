@@ -25,9 +25,9 @@ function desplazarDerechaResumen(){
 }
 
 function desplazarIzquierdaExperiencia(){
-  containerCardExperiencia[0].scrollLeft -= 231;
+  containerCardExperiencia[0].scrollLeft -= 236;
 }
 
 function desplazarDerechaExperiencia(){
-  containerCardExperiencia[0].scrollLeft += 231;
+  containerCardExperiencia[0].scrollLeft += 236;
 }
