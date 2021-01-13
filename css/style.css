@@ -358,13 +358,12 @@ header {
   flex-wrap: wrap;
   width: 100%;
   min-width: 320px;
-  min-height: 300px;
+  height: 400px;
   color: var(--soft-cyan);
-}
-
-.experience-background {
-  width: 100%;
-  background: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url(./imagenes/img/experieciax1.jpg)
+  background-image: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url('../imagenes/img/experieciax1.jpg');
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 }
 
 .experience-detail--title {
@@ -387,21 +386,42 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(0.5*(100vw - 250px));
+  width: calc(0.5*(100vw - 240px));
   font-size: 25px;
-
 }
 
 .detail-cards--buttonExp .fa-chevron-left {
-  color: var(--off-cy an);
+  color: var(--soft-cyan);
+  font-size: 25px;
+}
+
+.detail-cards--buttonExp .fa-chevron-right {
+  color: var(--soft-cyan);
   font-size: 25px;
 }
 
 .experience-cards--container {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  min-height: 350px;
+  padding: 0 5px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scroll-padding: 10px;
+}
+
+.experience-cards {
   position: relative;
-  width:250px;
-  height: 250px;
-  margin: 50px auto 0;
+  display: flex;
+  scroll-snap-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:221px;
+  height: 223px;
+  margin-right: 25px; 
   padding: 0 15px;
   background-color: var(--cyan);
   border-radius: 15px;
@@ -409,12 +429,55 @@ header {
   flex-shrink: 0;
 }
 
-/*logo-container--card*/
-
-.detail-cards--buttonExp .fa-chevron-right {
-  color: var(--off-cyan);
-  font-size: 25px;
+.logo-container--card {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 68px;
+  background: var(--soft-cyan);
+  border-radius: 20px;
+  left: calc(50% - 90px);
+  top: -34px;
 }
+
+.logo-container--card img {
+  width: 50%;
+  height: auto;
+}
+
+.experience-puesto, .experience-fecha {
+  width: 77%;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.experience-puesto {
+  font-weight: bold;
+}
+
+.experience-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 118px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 70px;
+  background-color: var(--off-cyan);
+}
+.experience-button a {
+  color: var(--soft-cyan);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo-container--card .logo-cataliz {
+  width: 35%;
+}
+
 
 .under-construction {
   display: flex;
