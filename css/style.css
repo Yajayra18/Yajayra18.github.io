@@ -308,6 +308,9 @@ header {
   justify-content: center;
   align-items: center;
   width: calc(0.5*(100vw - 250px));
+}
+
+.detail-cards--button i {
   color: var(--cyan);
   font-size: 25px;
 }
@@ -390,12 +393,7 @@ header {
   font-size: 25px;
 }
 
-.detail-cards--buttonExp .fa-chevron-left {
-  color: var(--soft-cyan);
-  font-size: 25px;
-}
-
-.detail-cards--buttonExp .fa-chevron-right {
+.detail-cards--buttonExp i {
   color: var(--soft-cyan);
   font-size: 25px;
 }
@@ -486,6 +484,106 @@ header {
   width: 35%;
 }
 
+.main--project-detail {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 320px;
+  height: 400px;
+  color: var(--off-cyan);
+  background-color: var(--off-cyan);
+}
+
+.project-detail--title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  min-width: 288px;
+  height: 50px;
+}
+
+.project-detail--title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--soft-cyan);
+}
+
+.detail-cards--buttonProj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(0.5*(100vw - 236px));
+  font-size: 25px;
+}
+
+.detail-cards--buttonProj i {
+  color: var(--cyan);
+  font-size: 25px;
+}
+
+.project-cards--container {
+  display: flex;
+  align-items: center;
+  width: 236px;
+  min-height: 350px;
+  padding: 0 8px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.project-cards {
+  position: relative;
+  display: flex;
+  scroll-snap-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:220px;
+  height: 223px;
+  margin-right: 16px; 
+  padding: 0 15px;
+  background-color: var(--cyan);
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.logo-container--proj {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: var(--soft-cyan);
+  border-radius: 50px;
+  left: -40px;
+  top: -40px;
+}
+
+.logo-container--proj img {
+  width: 60%;
+  height: auto;
+}
+.project-description, .project-fecha {
+  width: 77%;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  font-weight: bold;
+}
+
+.project-img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
 
 .under-construction {
   display: flex;
