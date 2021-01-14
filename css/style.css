@@ -288,6 +288,15 @@ header {
   scroll-snap-type: x proximity;
 }
 
+.detail-cards--container::-webkit-scrollbar {
+  display: none;
+}
+
+.detail-cards--container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .summary-detail--card {
   position:relative;
   scroll-snap-align: center;
@@ -408,6 +417,15 @@ header {
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+}
+
+.experience-cards--container::-webkit-scrollbar {
+  display: none;
+}
+
+.experience-cards--container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .experience-cards {
@@ -540,6 +558,15 @@ header {
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+}
+
+.project-cards--container::-webkit-scrollbar {
+  display: none;
+}
+
+.project-cards--container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .project-cards {
@@ -678,6 +705,14 @@ header {
   scroll-snap-type: x proximity;
 }
 
+.ProjPlatzi-cards--container::-webkit-scrollbar {
+  display: none;
+}
+
+.ProjPlatzi-cards--container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .ProjPlatzi-cards {
   position: relative;
   display: flex;
@@ -688,9 +723,9 @@ header {
   width:210px;
   height: 300px;
   margin-right: 26px; 
-  background-color: var(--cyan);
+  background-color: none;
   border-radius: 15px;
-  box-shadow: 0 4px 8px var(--off-cyan);
+  box-shadow: -1px 5px 8px var(--off-cyan);
   flex-shrink: 0;
 }
 
@@ -723,10 +758,12 @@ header {
 
 .ProjPlatzi-title {
   width: 77%;
-  padding-top: 20px;
+  padding-top: 7px;
   text-align: center;
   font-size: 1.4rem;
+  font-weight: bolder;
   margin-bottom: 15px;
+  color: var(--off-cyan);
 }
 
 .certificado1{
