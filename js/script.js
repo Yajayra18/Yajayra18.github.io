@@ -7,7 +7,7 @@ var containerCardExperiencia = document.getElementsByClassName('experience-cards
 
 var containerCardProyecto = document.getElementsByClassName('project-cards--container');
 
-var containerCardProyectoPla = document.getElementsByClassName('ProjPlatzi-cards--container');
+var containerCardProyectoPla = document.getElementsByClassName('Certificate-container');
 
 
 /*una vez haga click a la variable botonIzquierdo, este ejecutará la función desplazarIzquierdaResumen*/

@@ -659,7 +659,7 @@ header {
   font-size: 20px;
   text-align: center;
 }
-
+/*Project Platzi*/
 .main--proyectos-platzi-detail {
   display: flex;
   flex-wrap: wrap;
@@ -693,30 +693,17 @@ header {
   font-size: 25px;
 }
 
-
 .ProjPlatzi-cards--container {
   display: flex;
   align-items: center;
   width: 236px;
   min-height: 360px;
   padding: 0 13px;
-  overflow-x: scroll;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
 }
 
-.ProjPlatzi-cards--container::-webkit-scrollbar {
-  display: none;
-}
-
-.ProjPlatzi-cards--container {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
 .ProjPlatzi-cards {
   position: relative;
   display: flex;
-  scroll-snap-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -726,16 +713,6 @@ header {
   background-color: none;
   border-radius: 15px;
   box-shadow: -1px 5px 8px var(--off-cyan);
-  flex-shrink: 0;
-}
-
-.ProjPlatzi-cards:after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -13px;
-  width: 13px;
-  height: 1px;
 }
 
 .logo-container--card-ProjPlat {
@@ -766,18 +743,54 @@ header {
   color: var(--off-cyan);
 }
 
-.certificado1{
+.Certificate-container {
+  display: flex;
+  align-items: center;
+  width: 210px;
+  min-height: 100px; 
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.Certificate-container::-webkit-scrollbar {
+  display: none; /*chrome and opera*/
+}
+
+.ProjPlatzi-curso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: center;
+  align-items: center;
+  width: 210px;
+  min-height: 187px;
+  padding: 0 13px;
+}
+
+.ProjPlatzi-curso:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -13px;
+  width: 13px;
+  height: 1px;
+}
+
+.ProjPlatzi-certificado{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-.certificado1 img {
-  width: 90%;
+.ProjPlatzi-certificado img {
+  width: 100%;
 }
 
-.experience-button-ProjPlatzi {
+.ProjPlatzi-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -788,7 +801,7 @@ header {
   background-color: var(--off-cyan);
 }
 
-.experience-button-ProjPlatzi a {
+.ProjPlatzi-button a {
   color: var(--soft-cyan);
   text-decoration: none;
   font-weight: bold;
