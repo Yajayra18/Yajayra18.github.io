@@ -156,7 +156,7 @@ header {
 
 .presentacion-text {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: flex-end;
   width: 100%;
   height: 70%;
@@ -178,7 +178,7 @@ header {
   width: 100%;
   font-weight: bold;
   font-size: 1.1rem;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: flex-start;
 }
 
@@ -513,18 +513,17 @@ header {
 
 .detail-cards--buttonProj {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: calc(0.5*(100vw - 236px));
   font-size: 25px;
 }
 
 .detail-cards--buttonProj--left {
-  justify-content: right;
+  justify-content: flex-end;
 }
 
 .detail-cards--buttonProj--right {
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 .detail-cards--buttonProj i {
