@@ -7,6 +7,8 @@ var containerCardExperiencia = document.getElementsByClassName('experience-cards
 
 var containerCardProyecto = document.getElementsByClassName('project-cards--container');
 
+var containerCardProyectoPla = document.getElementsByClassName('ProjPlatzi-cards--container');
+
 
 /*una vez haga click a la variable botonIzquierdo, este ejecutará la función desplazarIzquierdaResumen*/
 botonIzquierdo[0].addEventListener("click", desplazarIzquierdaResumen);
@@ -17,6 +19,9 @@ botonDerecho[1].addEventListener("click", desplazarDerechaExperiencia);
 
 botonIzquierdo[2].addEventListener("click", desplazarIzquierdaProyecto);
 botonDerecho[2].addEventListener("click", desplazarDerechaProyecto);
+
+botonIzquierdo[3].addEventListener("click", desplazarIzquierdaProyectoPla);
+botonDerecho[3].addEventListener("click", desplazarDerechaProyectoPla);
 
 /*Funciones de scrollhorizontal para el contenedor de las tarjetas(containerCardResumen)*/
 function desplazarIzquierdaResumen(){
@@ -41,4 +46,12 @@ function desplazarIzquierdaProyecto(){
 
 function desplazarDerechaProyecto(){
   containerCardProyecto[0].scrollLeft += 210;
+}
+
+function desplazarIzquierdaProyectoPla(){
+  containerCardProyectoPla[0].scrollLeft -= 210;
+}
+
+function desplazarDerechaProyectoPla(){
+  containerCardProyectoPla[0].scrollLeft += 210;
 }

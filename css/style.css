@@ -584,6 +584,7 @@ header {
   width: 60%;
   height: auto;
 }
+
 .project-description, .project-fecha {
   width: 77%;
   text-align: center;
@@ -632,6 +633,129 @@ header {
   text-align: center;
 }
 
+.main--proyectos-platzi-detail {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 320px;
+  height: 420px;
+  color: var(--soft-cyan);
+  background-image:  linear-gradient(180deg, rgba(255, 255, 255, 0) 27.08%, #03989E 80.73%), url('../imagenes/img/formacion.jpg');
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.detail-cards--buttonProjPlatzi {
+  display: flex;
+  align-items: center;
+  width: calc(0.5*(100vw - 236px));
+  font-size: 25px;
+}
+
+.detail-cards--buttonProjPlatzi--left {
+  justify-content: flex-end;
+}
+
+.detail-cards--buttonProjPlatzi--right {
+  justify-content: flex-start;
+}
+
+.detail-cards--buttonProjPlatzi i {
+  color: var(--off-cyan);
+  font-size: 25px;
+}
+
+
+.ProjPlatzi-cards--container {
+  display: flex;
+  align-items: center;
+  width: 236px;
+  min-height: 360px;
+  padding: 0 13px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.ProjPlatzi-cards {
+  position: relative;
+  display: flex;
+  scroll-snap-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:210px;
+  height: 300px;
+  margin-right: 26px; 
+  background-color: var(--cyan);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px var(--off-cyan);
+  flex-shrink: 0;
+}
+
+.ProjPlatzi-cards:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -13px;
+  width: 13px;
+  height: 1px;
+}
+
+.logo-container--card-ProjPlat {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: var(--soft-cyan);
+  border-radius: 50px;
+  left: -13px;
+  top: -40px;
+}
+
+.logo-container--card-ProjPlat img {
+  width: 60%;
+  height: auto;
+}
+
+.ProjPlatzi-title {
+  width: 77%;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.certificado1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.certificado1 img {
+  width: 90%;
+}
+
+.experience-button-ProjPlatzi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 118px;
+  height: 30px;
+  margin-top: 15px;
+  border-radius: 70px;
+  background-color: var(--off-cyan);
+}
+
+.experience-button-ProjPlatzi a {
+  color: var(--soft-cyan);
+  text-decoration: none;
+  font-weight: bold;
+}
 
 .under-construction {
   display: flex;
@@ -640,7 +764,6 @@ header {
   width: 100%;
   background-color: var(--cyan);
 }
-
 .under-construction img {
   width: 100%;
   max-width: 500px;
