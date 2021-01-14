@@ -622,6 +622,7 @@ header {
   height: 35px;
   border-radius: 50%;
   background: #242B7C;
+  text-decoration: none;
 }
 
 .project-container--social i {
