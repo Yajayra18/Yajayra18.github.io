@@ -753,6 +753,7 @@ header {
   scroll-snap-type: x proximity;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  padding: 0 12px;;
 }
 
 .Certificate-container::-webkit-scrollbar {
@@ -760,22 +761,25 @@ header {
 }
 
 .ProjPlatzi-curso {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   scroll-snap-align: center;
   align-items: center;
-  width: 210px;
+  width: 186px;
   min-height: 187px;
-  padding: 0 13px;
+  padding: 0 12px;
+  margin-right: 24px;
+  flex-shrink: 0;
 }
 
 .ProjPlatzi-curso:after {
   content: "";
   display: block;
   position: absolute;
-  right: -13px;
-  width: 13px;
+  right: -12px;
+  width: 12px;
   height: 1px;
 }
 

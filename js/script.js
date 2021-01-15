@@ -49,9 +49,9 @@ function desplazarDerechaProyecto(){
 }
 
 function desplazarIzquierdaProyectoPla(){
-  containerCardProyectoPla[0].scrollLeft -= 210;
+  containerCardProyectoPla[0].scrollLeft -= 186;
 }
 
 function desplazarDerechaProyectoPla(){
-  containerCardProyectoPla[0].scrollLeft += 210;
+  containerCardProyectoPla[0].scrollLeft += 186;
 }
