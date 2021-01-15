@@ -827,22 +827,78 @@ header {
 
 footer {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
-  height: 50px;
+  justify-content: center;
+  min-height: 320px;
 }
 
-.makelove {
-  padding-right: 20px;
+.footer--work-together {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 280px;
+  background: var(--off-cyan);
+  color: var(--soft-cyan)
 }
 
-.makelove p {
-  display: inline-block;
-  color: var(--cyan);
+.footer--work-together h2 {
+  padding: 0 0 25px 0;
+  font-size: 2rem;
+}
+
+.footer--work-together p {
+  padding: 0 0 35px 0;
+  font-size: 1.3rem;
+}
+
+
+.footer-container--social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  min-height: 50px;
+}
+
+.footer-container--social a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: var(--soft-cyan);
+  text-decoration: none;
+}
+
+.footer-container--social i {
+  width: 20px;
+  height: 20px;
+  color: var(--off-cyan);
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer--makelove {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  background: var(--cyan);
+  color:var(--soft-cyan)
+}
+
+.footer--makelove p {
+  display:inline-block;
   font-size: 1.2rem;
-  font-weight: bold;
 }
 
 .fa-heart {
-  color: var(--cyan);
+  color: var(--soft-cyan);
 }
