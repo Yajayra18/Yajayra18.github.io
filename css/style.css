@@ -124,7 +124,6 @@ header {
 
 .header--presentacion-container {
   display: flex;
-  align-items: center;
   width: 100%;
   min-height: 150px;
   background-color: var(--cyan);
@@ -155,7 +154,7 @@ header {
 .presentacion-text {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
   height: 70%;
   font-size: 1.3rem;
@@ -164,7 +163,7 @@ header {
 
 .presentacion-text p {
   text-align: left;
-  width: 80%;
+  width: 100%;
 }
 
 .presentacion-button {
