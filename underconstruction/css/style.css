@@ -1,0 +1,83 @@
+:root{
+  --off-cyan:#233946;
+  --off-gray: #4B6777;
+  --soft-cyan: #CEEBEC;
+  --soft-cyan2: #9BDDDF;
+  --cyan: #03989E;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background:var(--off-cyan);
+  font-size: 1.6rem;
+}
+
+.back a {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: var(--soft-cyan);
+  text-decoration: none;
+}
+
+.back-icon-text i{
+  margin-right: 10px;
+}
+
+
+.main--experience-ism {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 320px;
+  min-height: 300px;
+  color: var(--off-cyan);
+  background-color: var(--off-cyan);
+}
+
+.under-construction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--cyan);
+}
+.under-construction img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.footer--makelove {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  background: var(--off-cyan);
+  color:var(--soft-cyan)
+}
+
+.footer--makelove p {
+  display:inline-block;
+  font-size: 1.2rem;
+}
