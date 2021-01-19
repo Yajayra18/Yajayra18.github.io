@@ -34,7 +34,7 @@ header {
   width: 100%;
   min-width: 320px;
   min-height: 400px;
-  background-image: url(../imagenes/img/header.jpg);
+  background-image: url(../assets/img/header.jpg);
   background-color: var(--off-cyan);background-blend-mode: soft-light;
   background-position: bottom;
   background-size: auto 110%;
@@ -371,7 +371,7 @@ header {
   min-width: 320px;
   height: 400px;
   color: var(--soft-cyan);
-  background-image: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url('../imagenes/img/experieciax1.jpg');
+  background-image: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url('../assets/img/experieciax1.jpg');
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -665,7 +665,7 @@ header {
   min-width: 320px;
   height: 420px;
   color: var(--soft-cyan);
-  background-image:  linear-gradient(180deg, rgba(255, 255, 255, 0) 27.08%, #03989E 80.73%), url('../imagenes/img/formacion.jpg');
+  background-image:  linear-gradient(180deg, rgba(255, 255, 255, 0) 27.08%, #03989E 80.73%), url('../assets/img/formacion.jpg');
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
