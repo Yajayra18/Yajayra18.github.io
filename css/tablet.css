@@ -1,6 +1,7 @@
+/*Header*/
 header {
+  min-height: 550px;
   background-image: url(../assets/img/headerTablet.jpg);
-  background-size: auto 150%;
 }
 
 .header--idiomas-container p {
@@ -8,7 +9,7 @@ header {
 }
 
 .header--logo-container img{
-  width: 10%;
+  width: 12%;
   min-width: 48px;
   max-width: 130px;
 }
@@ -17,10 +18,95 @@ header {
   font-size: 1.8rem;
 }
 
-
-main {
-  display: none;
+.presentacion-text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
+
+.text-box{
+  font-size: 1.7rem;
+}
+/*Main-Resumen*/
+.main--summary-detail {
+  min-height: 450px;
+
+}
+
+.summary-detail--title h2 {
+  font-size: 2.2rem;
+}
+
+.summary-detail--title {
+  height: 80px;
+}
+
+.summary-title {
+  font-size: 1.8rem;
+}
+
+.summary-time, .resumen-list {
+  font-size:1.5rem;
+}
+
+/*Main-Experiencia */
+
+.main--experience-detail {
+  min-height: 450px;
+  background-image: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url('../assets/img/experienciatablet.jpg');
+  background-size: auto 180%;
+}
+
+.experience-detail--title {
+  height: 80px;
+}
+
+.experience-detail--title h2 {
+  font-size: 2.2rem;
+}
+
+.experience-puesto, .experience-fecha {
+  width: 90%;
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+
+.experience-puesto {
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: none; /*revisar grosor dde texto*/
+}
+
+.experience-button {
+  top:10px;
+  font-size:1.3rem;
+}
+
+/*Main-Proyectos */
+.main--project-detail {
+  min-height: 450px;
+}
+
+.project-detail--title {
+  height: 80px;
+}
+
+.project-description, .project-fecha {
+  font-size: 1.4rem;
+}
+
+
+.project-container--social a{
+  width: 40px;
+  height: 40px;
+}
+
+.project-container--social i {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+}
+/*Main-Proyectos */
 
 .footer--work-together {
   display: none;
