@@ -1,6 +1,22 @@
 header {
-  display: none;
+  background-image: url(../assets/img/headerTablet.jpg);
+  background-size: auto 150%;
 }
+
+.header--idiomas-container p {
+  font-size: 1.5rem;
+}
+
+.header--logo-container img{
+  width: 10%;
+  min-width: 48px;
+  max-width: 130px;
+}
+
+.header--navigator-container a {
+  font-size: 1.8rem;
+}
+
 
 main {
   display: none;
