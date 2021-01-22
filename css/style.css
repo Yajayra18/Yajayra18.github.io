@@ -37,7 +37,7 @@ header {
   background-image: url(../assets/img/header.jpg);
   background-color: var(--off-cyan);background-blend-mode: soft-light;
   background-position: bottom;
-  background-size: auto 110%;
+  background-size: auto 120%;
   background-repeat: no-repeat;
 }
 
@@ -373,7 +373,7 @@ header {
   color: var(--soft-cyan);
   background-image: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url('../assets/img/experieciax1.jpg');
   background-position: center;
-  background-size: auto 100%;
+  background-size: auto 120%;
   background-repeat: no-repeat;
 }
 
@@ -667,7 +667,7 @@ header {
   color: var(--soft-cyan);
   background-image:  linear-gradient(180deg, rgba(255, 255, 255, 0) 27.08%, #03989E 80.73%), url('../assets/img/formacion.jpg');
   background-position: center;
-  background-size: auto 100%;
+  background-size: auto 120%;
   background-repeat: no-repeat;
 }
 
