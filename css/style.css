@@ -33,8 +33,8 @@ header {
   text-align: center;
   width: 100%;
   min-width: 320px;
-  min-height: 400px;
-  background-image: url(../assets/img/header.jpg);
+  height: 400px;
+  background-image: url(../assets/img/1.mobile/mobile-header.jpg);
   background-color: var(--off-cyan);background-blend-mode: soft-light;
   background-position: bottom;
   background-size: auto 120%;
@@ -68,6 +68,7 @@ header {
   color: var(--cyan);
   font-weight: bold;
 }
+
 .header--idiomas-container a:active{
   color: var(--soft-cyan);
   font-weight: bold;
@@ -83,9 +84,9 @@ header {
 }
 
 .header--logo-container img{
-  width: 15%;
-  min-width: 48px;
-  max-width: 130px;
+  width: 70px;
+  height: 70px;
+  background-image: url("../assets/icon/mobile-logoyaja.png");
 }
 
 .header--navigator-container {
@@ -371,7 +372,7 @@ header {
   min-width: 320px;
   height: 400px;
   color: var(--soft-cyan);
-  background-image: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url('../assets/img/experieciax1.jpg');
+  background-image: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url('../assets/img/1.mobile/mobile-experiencia.jpg');
   background-position: center;
   background-size: auto 120%;
   background-repeat: no-repeat;
@@ -665,7 +666,7 @@ header {
   min-width: 320px;
   height: 420px;
   color: var(--soft-cyan);
-  background-image:  linear-gradient(180deg, rgba(255, 255, 255, 0) 27.08%, #03989E 80.73%), url('../assets/img/formacion.jpg');
+  background-image:  linear-gradient(180deg, rgba(255, 255, 255, 0) 27.08%, #03989E 80.73%), url('../assets/img/1.mobile/mobile-formacion.jpg');
   background-position: center;
   background-size: auto 120%;
   background-repeat: no-repeat;

@@ -19,9 +19,16 @@
         <a href="">ES</a>
       </p>
     </div>
-    <figure class="header--logo-container">
-      <img src="./assets/icon/logoyaja.png" alt="Logo de Yajayra">
-    </figure>
+    <picture>
+      <source media="(min-width= 600px)" srcset="./assets/icon/tablet-logoyaja.png"/>
+      <source media="(min-with= 1000px)" srcset="./assets/icon/desktop-logoyaja.png"/>
+      <img src="./assets/icon/mobile-logoyaja.png" alt="Logo de Yajayra">
+    </picture>
+    <!-- 
+      <figure class="header--logo-container">
+        <img alt="Logo de Yajayra">
+      </figure>
+    -->
     <nav class="header--navigator-container">
       <ol>
         <li>
@@ -39,9 +46,16 @@
       </ol>
     </nav>
     <div class="header--presentacion-container">
+    <!--
       <figure class="header--presentacion-foto">
-        <img src="./assets/img/Yajayra.jpg" alt="Foto de Yajayra">
+        <img alt="Foto de Yajayra">
       </figure>
+    -->  
+      <picture class="header--presentacion-foto">
+        <source media="(min-width= 600px)" srcset=""/>
+        <source media="(min-with= 1000px)" srcset=""/>
+        <img src="./assets/img/1.mobile/mobile-Yajayra.jpg" alt="Foto de Yajayra">
+      </picture>
       <div class="header--presentacion-texto-boton">
         <div class="presentacion-text">
           <p>¡Hola! Soy Yajayra, <br/> Egresada de Psicóloga Organizacional <br/>con pasión por la Gestión Humana </p>
