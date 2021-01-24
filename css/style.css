@@ -792,6 +792,7 @@ header {
 
 .ProjPlatzi-certificado img {
   width: 100%;
+  height: auto;
 }
 
 .ProjPlatzi-button {
