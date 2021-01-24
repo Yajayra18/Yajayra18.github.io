@@ -85,8 +85,8 @@ header {
 
 .header--logo-container img{
   width: 70px;
-  height: 70px;
-  background-image: url("../assets/icon/mobile-logoyaja.png");
+  height: 70px;/*
+  background-image: url("../assets/icon/mobile-logoyaja.png");*/
 }
 
 .header--navigator-container {
