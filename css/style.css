@@ -9,6 +9,7 @@ Al agregar estilos, se acomoda por temas.
 */
 
 :root{
+  --dark-cyan:#16242c;
   --off-cyan:#233946;
   --off-gray: #4B6777;
   --soft-cyan: #CEEBEC;
@@ -160,7 +161,7 @@ header {
   width: 100%;
   height: 70%;
   font-size: 1.23rem;
-  color: var(--soft-cyan);
+  color: var(--dark-cyan);
 }
 
 .presentacion-text p {
@@ -372,7 +373,7 @@ header {
   width: 100%;
   min-width: 320px;
   height: 400px;
-  color: var(--soft-cyan);
+  color: var(--dark-cyan);
   background-image: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url('../assets/img/1.mobile/mobile-experiencia.jpg');
   background-position: center;
   background-size: auto 120%;
@@ -878,7 +879,8 @@ footer {
   height: 40px;
   padding: 0 20px;
   background: var(--cyan);
-  color:var(--soft-cyan)
+  color:var(--dark-cyan);
+  font-weight: bold;
 }
 
 .footer--makelove p {
@@ -887,7 +889,7 @@ footer {
 }
 
 .fa-heart {
-  color: var(--soft-cyan);
+  color: var(--dark-cyan);
 }
 
 .under-construction {
