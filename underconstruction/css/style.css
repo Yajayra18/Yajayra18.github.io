@@ -39,13 +39,12 @@ html{
   margin-right: 10px;
 }
 
-
 .main--experience-ism {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   min-width: 320px;
-  min-height: 300px;
+  height: calc(100vh - 90px);
   color: var(--off-cyan);
   background-color: var(--off-cyan);
 }

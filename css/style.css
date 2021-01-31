@@ -9,6 +9,7 @@ Al agregar estilos, se acomoda por temas.
 */
 
 :root{
+  --dark-cyan:#16242c;
   --off-cyan:#233946;
   --off-gray: #4B6777;
   --soft-cyan: #CEEBEC;
@@ -33,8 +34,8 @@ header {
   text-align: center;
   width: 100%;
   min-width: 320px;
-  min-height: 400px;
-  background-image: url(../assets/img/header.jpg);
+  height: 400px;
+  background-image: url(../assets/img/1.mobile/mobile-header.jpg);
   background-color: var(--off-cyan);background-blend-mode: soft-light;
   background-position: bottom;
   background-size: auto 120%;
@@ -68,6 +69,7 @@ header {
   color: var(--cyan);
   font-weight: bold;
 }
+
 .header--idiomas-container a:active{
   color: var(--soft-cyan);
   font-weight: bold;
@@ -78,14 +80,14 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 48px;
+  height: 48px;
   margin: 15px 0px 18px 0;
 }
 
 .header--logo-container img{
-  width: 15%;
-  min-width: 48px;
-  max-width: 130px;
+  width: 70px;
+  height: 70px;/*
+  background-image: url("../assets/icon/mobile-logoyaja.png");*/
 }
 
 .header--navigator-container {
@@ -140,6 +142,7 @@ header {
 .header--presentacion-foto img {
   margin: 15px 0;
   width: 70%;
+  height: auto;
   min-width: 100px;
   max-width: 150px;
   border-radius: 70px;
@@ -158,7 +161,7 @@ header {
   width: 100%;
   height: 70%;
   font-size: 1.23rem;
-  color: var(--soft-cyan);
+  color: var(--dark-cyan);
 }
 
 .presentacion-text p {
@@ -370,8 +373,8 @@ header {
   width: 100%;
   min-width: 320px;
   height: 400px;
-  color: var(--soft-cyan);
-  background-image: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url('../assets/img/experieciax1.jpg');
+  color: var(--dark-cyan);
+  background-image: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url('../assets/img/1.mobile/mobile-experiencia.jpg');
   background-position: center;
   background-size: auto 120%;
   background-repeat: no-repeat;
@@ -665,7 +668,7 @@ header {
   min-width: 320px;
   height: 420px;
   color: var(--soft-cyan);
-  background-image:  linear-gradient(180deg, rgba(255, 255, 255, 0) 27.08%, #03989E 80.73%), url('../assets/img/formacion.jpg');
+  background-image:  linear-gradient(180deg, rgba(255, 255, 255, 0) 27.08%, #03989E 80.73%), url('../assets/img/1.mobile/mobile-formacion.jpg');
   background-position: center;
   background-size: auto 120%;
   background-repeat: no-repeat;
@@ -790,6 +793,7 @@ header {
 
 .ProjPlatzi-certificado img {
   width: 100%;
+  height: auto;
 }
 
 .ProjPlatzi-button {
@@ -875,7 +879,8 @@ footer {
   height: 40px;
   padding: 0 20px;
   background: var(--cyan);
-  color:var(--soft-cyan)
+  color:var(--dark-cyan);
+  font-weight: bold;
 }
 
 .footer--makelove p {
@@ -884,7 +889,7 @@ footer {
 }
 
 .fa-heart {
-  color: var(--soft-cyan);
+  color: var(--dark-cyan);
 }
 
 .under-construction {

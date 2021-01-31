@@ -12,43 +12,58 @@
   <script src="https://kit.fontawesome.com/2351135cfa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
+  <header class="lazy">
     <div class="header--idiomas-container">
       <p>
-        <a href="">EN</a>
-        <a href="">ES</a>
+        <a alt="Versión en Inglés"  href="https://yajayra18.github.io/index">EN</a>
+        <a alt="Versión en Español" href="https://yajayra18.github.io/index">ES</a>
       </p>
     </div>
-    <figure class="header--logo-container">
-      <img src="./assets/icon/logoyaja.png" alt="Logo de Yajayra">
-    </figure>
+    <picture class="header--logo-container">
+      <source media="(min-width= 320px)" srcset="./assets/icon/tablet-logoyaja.png 1x"/>
+      <source media="(min-width= 600px)" srcset="./assets/icon/tablet-logoyaja.png 10x"/>
+      <source media="(min-with= 1000px)" srcset="./assets/icon/desktop-logoyaja.png 115x"/>
+      <img width="70" height="70" loading="lazy" src="./assets/icon/logoyaja.png" alt="Logo de Yajayra">
+    </picture>
+    <!-- 
+      <figure class="header--logo-container">
+        <img alt="Logo de Yajayra">
+      </figure>
+    -->
     <nav class="header--navigator-container">
       <ol>
         <li>
-          <a href="#resumen">  Resumen  </a>
+          <a alt="ir a sección resumen" href="#resumen">  Resumen  </a>
         </li>
         <li>
-          <a href="#experiencia">Experiencia</a>
+          <a alt="ir a sección experiencia" href="#experiencia">Experiencia</a>
         </li>
         <li>
-          <a href="#proyectos">Proyectos  </a>
+          <a alt="ir a sección proyectos"  href="#proyectos">Proyectos</a>
         </li>
         <li>
-          <a href="#contacto">Trabajemos juntos  </a>
+          <a alt="ir a sección trabajemos juntos" href="#contacto">Trabajemos juntos</a>
         </li>
       </ol>
     </nav>
     <div class="header--presentacion-container">
+    <!--
       <figure class="header--presentacion-foto">
-        <img src="./assets/img/Yajayra.jpg" alt="Foto de Yajayra">
+        <img alt="Foto de Yajayra">
       </figure>
+    -->  
+      <picture class="header--presentacion-foto">
+        <source media="(min-width= 600px)" srcset=""/>
+        <source media="(min-with= 1000px)" srcset=""/>
+        <img width="300" height="370" loading="lazy" src="./assets/img/1.mobile/mobile-Yajayra.jpg" alt="Foto de Yajayra">
+      </picture>
       <div class="header--presentacion-texto-boton">
         <div class="presentacion-text">
           <p>¡Hola! Soy Yajayra, <br/> Egresada de Psicóloga Organizacional <br/>con pasión por la Gestión Humana </p>
         </div>
         <div class="presentacion-button">
           <div class="text-box">
-             <a href="./cv/YajayraArauco-GestionHumana.pdf" download="YajayraArauco-GestiónHumana.pdf" class="btn btn-white btn-animate"> Descargar CV
+             <a alt="rescargar cv" href="./cv/YajayraArauco-GestionHumana.pdf" download="YajayraArauco-GestiónHumana.pdf" class="btn btn-white btn-animate"> Descargar CV
             </a>
           </div>
         </div>
@@ -117,7 +132,7 @@
         <i class="fas fa-chevron-right"></i>
       </span>
     </section>
-    <section id="experiencia" class="main--experience-detail">
+    <section id="experiencia" class="main--experience-detail lazy">
       <div class="experience-detail--title">
         <h2>Experiencia</h2>
       </div>
@@ -127,42 +142,42 @@
       <section class="experience-cards--container">
         <article class="experience-cards">
           <figure class="logo-container--card">
-            <img src="./assets/icon/ISM.png" alt="Logo de Industrias San Miguel">
+            <img width="165" height="87" src="./assets/icon/ISM.png" alt="Logo de Industrias San Miguel">
           </figure>
           <p class="experience-puesto">Practicante Profesional de Gestión Humana</p>
           <p class="experience-fecha">Febrero a Julio 2020</p>
           <span class="experience-button">
-            <a href="./underconstruction/index.html">Ver más</a>
+            <a alt="experiencia en Industrias San Miguel" href="./underconstruction/index.html">Ver más</a>
           </span>
         </article>
         <article class="experience-cards">
           <figure class="logo-container--card">
-            <img src="./assets/icon/logoCosapi.png" alt="Logo de Cosapi">
+            <img width="332" height="174" loading="lazy" src="./assets/icon/logoCosapi.png" alt="Logo de Cosapi">
           </figure>
           <p class="experience-puesto">Practicante Pre Profesional de Clima y Cultura</p>
           <p class="experience-fecha">Noviembre 2018 a<br> Diciembre 2019</p>
           <span class="experience-button">
-            <a href="./underconstruction/index.html">Ver más</a>
+            <a alt="experiencia en Cosapi" href="./underconstruction/index.html">Ver más</a>
           </span>
         </article>
         <article class="experience-cards">
           <figure class="logo-container--card">
-            <img src="./assets/icon/Hadas.png" alt="Logo de Hadas Perú">
+            <img width="385" height="131" loaging="lazy" src="./assets/icon/Hadas.png" alt="Logo de Hadas Perú">
           </figure>
           <p class="experience-puesto">Practicante Pre Profesional de Atracción del Talento</p>
           <p class="experience-fecha">Septiembre a<br> Noviembre 2018</p>
           <span class="experience-button">
-            <a href="./underconstruction/index.html">Ver más</a>
+            <a alt="experiencia en Hadas" href="./underconstruction/index.html">Ver más</a>
           </span>
         </article>
         <article class="experience-cards">
           <figure class="logo-container--card">
-            <img class= 'logo-cataliz' src="./assets/icon/cataliz.png" alt="Logo de Cataliz Talent Lab">
+            <img width="200" height="200" loading="lazy" class= 'logo-cataliz' src="./assets/icon/cataliz.png" alt="Logo de Cataliz Talent Lab">
           </figure>
           <p class="experience-puesto">Practicante Pre Profesional de Selección y Desarrollo</p>
           <p class="experience-fecha">Septiembre 2017 a<br> Junio 2018</p>
           <span class="experience-button">
-            <a href="./underconstruction/index.html">Ver más</a>
+            <a alt="experiencia en Cataliz" href="./underconstruction/index.html">Ver más</a>
           </span>
         </article>
       </section>
@@ -180,30 +195,30 @@
       <section class="project-cards--container">
         <article class="project-cards">
           <figure class="logo-container--proj">
-            <img src="./assets/icon/Proideas1.png" alt="Logo de Proideas">
+            <img width="500" height="588" loading="lazy" src="./assets/icon/Proideas1.png" alt="Logo de Proideas">
           </figure>
           <p class="project-description">Creación de ProIdeas con el fin compartir herramientas para la inserción laboral</p>
           <p class="project-fecha">Noviembre 2020</p>
           <div class="project-container--social">
-            <a href="https://www.facebook.com/Proideas.asesoria/" target="_blank">
+            <a aria-label="facebook de Proideas" alt="facebook de Proideas" href="https://www.facebook.com/Proideas.asesoria/" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com/team.proideas/" target="_blank">
+            <a aria-label="instagram de Proideas" alt="instagram de Proideas" href="https://www.instagram.com/team.proideas/" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.linkedin.com/company/proideas" target="_blank">
+            <a aria-label="linkedin de Proideas" alt="linkedin de Proideas"  href="https://www.linkedin.com/company/proideas" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
         </article>
         <article class="project-cards">
           <figure class="logo-container--proj">
-            <img src="./assets/icon/kpmg.png" alt="Logo de KPMG">
+            <img width="500" height="221" loading="lazy" src="./assets/icon/kpmg.png" alt="Logo de KPMG">
           </figure>
           <p class="project-description">Feria Laboral en la Pontificia Universidad Católica del Perú, representanto a KPMG</p>
           <p class="project-fecha">Septiembre 2017</p>
           <figure class="project-container-img">
-            <img class="project-img" src="./assets/img/feriaKPMG.jpg" alt="Foto de Feria Laboral">
+            <img width="512" height="384" loading="lazy" class="project-img" src="./assets/img/feriaKPMG.jpg" alt="Foto de Feria Laboral">
           </figure>
         </article>
       </section>
@@ -218,151 +233,151 @@
       <section class="ProjPlatzi-cards--container">
         <article class="ProjPlatzi-cards">
           <figure class="logo-container--card-ProjPlat">
-            <img src="./assets/icon/platzi.png" alt="Logo de Platzi">
+            <img width="512" height="512" loading="lazy" src="./assets/icon/platzi.png" alt="Logo de Platzi">
           </figure>
           <p class="ProjPlatzi-title">Nunca parando de aprender con Platzi </p>
           <div class="Certificate-container">
             <div class="ProjPlatzi-curso">
               <figure class="ProjPlatzi-certificado">
-                <img src="./assets/formacion-platzi/13.git.png" alt="Certificado de git y  github">
+                <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/13.git.png" alt="Certificado de git y  github">
               </figure>
               <span class="ProjPlatzi-button">
-                <a href="https://platzi.com/p/yajayra-arauco-flores/curso/1557-course/diploma/detalle/" target="_blank" >Ver más</a>
+                <a alt="ver cerificado de github" href="https://platzi.com/p/yajayra-arauco-flores/curso/1557-course/diploma/detalle/" target="_blank" rel="noopener noreferrer">Ver más</a>
               </span>
             </div>
 
             <div class="ProjPlatzi-curso">
               <figure class="ProjPlatzi-certificado">
-                <img src="./assets/formacion-platzi/9.responsive-design.png" alt="Certificado curso de Responsive Design, maquetación mobile">
+                <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/9.responsive-design.png" alt="Certificado curso de Responsive Design, maquetación mobile">
               </figure>
               <span class="ProjPlatzi-button">
-                <a href="https://platzi.com/p/yajayra-arauco-flores/curso/2030-course/diploma/detalle/" target="_blank" >Ver más</a>
+                <a alt="ver cerificado de Responsive Design" href="https://platzi.com/p/yajayra-arauco-flores/curso/2030-course/diploma/detalle/" target="_blank" rel="noopener noreferrer">Ver más</a>
               </span>
             </div>
 
             <div class="ProjPlatzi-curso">
               <figure class="ProjPlatzi-certificado">
-                <img src="./assets/formacion-platzi/10.sistema-de-diseño.png" alt="Certificado de Sistema de Diseño">
+                <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/10.sistema-de-diseño.png" alt="Certificado de Sistema de Diseño">
               </figure>
               <span class="ProjPlatzi-button">
-                <a href="https://platzi.com/p/yajayra-arauco-flores/curso/1420-course/diploma/detalle/" target="_blank" >Ver más</a>
+                <a alt="ver cerificado de Sistema de Diseño" href="https://platzi.com/p/yajayra-arauco-flores/curso/1420-course/diploma/detalle/" target="_blank" rel="noopener noreferrer">Ver más</a>
               </span>
             </div>
 
             <div class="ProjPlatzi-curso">
               <figure class="ProjPlatzi-certificado">
-                <img src="./assets/formacion-platzi/11.programacion-basica.png" alt="Certificado de Programación Básica">
+                <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/11.programacion-basica.png" alt="Certificado de Programación Básica">
               </figure>
               <span class="ProjPlatzi-button">
-                <a href="https://platzi.com/p/yajayra-arauco-flores/curso/1050-course/diploma/detalle/" target="_blank" >Ver más</a>
+                <a alt="ver cerificado de Programación Básica" href="https://platzi.com/p/yajayra-arauco-flores/curso/1050-course/diploma/detalle/" target="_blank" rel="noopener noreferrer" >Ver más</a>
               </span>
             </div>
 
             <div class="ProjPlatzi-curso">
               <figure class="ProjPlatzi-certificado">
-              <img src="./assets/formacion-platzi/1.dessarrollo-web-online.png" alt="Certificado de Desarrollo Web Online - Platzi">
+              <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/1.dessarrollo-web-online.png" alt="Certificado de Desarrollo Web Online - Platzi">
               </figure>
               <span class="ProjPlatzi-button">
-                <a href="https://platzi.com/p/yajayra-arauco-flores/curso/1350-course/diploma/detalle/" target="_blank" >Ver más</a>
+                <a alt="ver cerificado de Desarrollo Web Online" href="https://platzi.com/p/yajayra-arauco-flores/curso/1350-course/diploma/detalle/" target="_blank" rel="noopener noreferrer" >Ver más</a>
               </span>
             </div>
 
             <div class="ProjPlatzi-curso">
               <figure class="ProjPlatzi-certificado">
-                <img src="./assets/formacion-platzi/4.definitivo-de-html-css.png" alt="Certificado de curso definitivo de html y css - Platzi">
+                <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/4.definitivo-de-html-css.png" alt="Certificado de curso definitivo de html y css - Platzi">
               </figure>
               <span class="ProjPlatzi-button">
-                <a href="https://platzi.com/p/yajayra-arauco-flores/curso/2008-course/diploma/detalle/" target="_blank" >Ver más</a>
+                <a alt="ver cerificado de curso definitivo de html y css" href="https://platzi.com/p/yajayra-arauco-flores/curso/2008-course/diploma/detalle/" target="_blank" rel="noopener noreferrer">Ver más</a>
               </span>
             </div>
 
             <div class="ProjPlatzi-curso">
               <figure class="ProjPlatzi-certificado">
-                <img src="./assets/formacion-platzi/12.practico-html-css.png" alt="Certificado de curso práctico de html y css">
+                <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/12.practico-html-css.png" alt="Certificado de curso práctico de html y css">
               </figure>
               <span class="ProjPlatzi-button">
-                <a href="https://platzi.com/p/yajayra-arauco-flores/curso/1758-course/diploma/detalle/" target="_blank" >Ver más</a>
+                <a alt="ver cerificado de curso práctico de html y css"  href="https://platzi.com/p/yajayra-arauco-flores/curso/1758-course/diploma/detalle/" target="_blank" rel="noopener noreferrer">Ver más</a>
               </span>
             </div>
 
             <div class="ProjPlatzi-curso">
               <figure class="ProjPlatzi-certificado">
-                <img src="./assets/formacion-platzi/14.ingenieria-software.png" alt="Certificado de Fundamentos de Ingeniería de Software">
+                <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/14.ingenieria-software.png" alt="Certificado de Fundamentos de Ingeniería de Software">
               </figure>
               <span class="ProjPlatzi-button">
-                <a href="https://platzi.com/p/yajayra-arauco-flores/curso/1098-course/diploma/detalle/" target="_blank" >Ver más</a>
+                <a alt="ver cerificado de Fundamentos de Ingeniería de Software" href="https://platzi.com/p/yajayra-arauco-flores/curso/1098-course/diploma/detalle/" target="_blank" rel="noopener noreferrer">Ver más</a>
               </span>
             </div> 
 
             <div class="ProjPlatzi-curso">
               <figure class="ProjPlatzi-certificado">
-                <img src="./assets/formacion-platzi/7.introducion-a-la-web.png" alt="Certificado de Introducción a la Web - Platzi">
+                <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/7.introducion-a-la-web.png" alt="Certificado de Introducción a la Web - Platzi">
               </figure>
               <span class="ProjPlatzi-button">
-                <a href="https://platzi.com/p/yajayra-arauco-flores/curso/2053-course/diploma/detalle/" target="_blank" >Ver más</a>
+                <a  alt="ver cerificado de Fundamentos de Introducción a la Web"  href="https://platzi.com/p/yajayra-arauco-flores/curso/2053-course/diploma/detalle/" target="_blank" rel="noopener noreferrer">Ver más</a>
               </span>
             </div>
      
             <div class="ProjPlatzi-curso">
               <figure class="ProjPlatzi-certificado">
-                <img src="./assets/formacion-platzi/5.flujo-de-desarrollo-moderno-codestream.png" alt="Certificado Flujo de desarrollo moderno codestream - Platzi">
+                <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/5.flujo-de-desarrollo-moderno-codestream.png" alt="Certificado Flujo de desarrollo moderno codestream - Platzi">
               </figure>
               <span class="ProjPlatzi-button">
-                <a href="https://platzi.com/p/yajayra-arauco-flores/curso/2157-course/diploma/detalle/" target="_blank" >Ver más</a>
+                <a alt="ver cerificado de Flujo de desarrollo moderno codestream" href="https://platzi.com/p/yajayra-arauco-flores/curso/2157-course/diploma/detalle/" target="_blank" rel="noopener noreferrer">Ver más</a>
               </span>
             </div>
 
             <div class="ProjPlatzi-curso">
               <figure class="ProjPlatzi-certificado">
-                <img src="./assets/formacion-platzi/8.curso-prework.png" alt="Certificado curso de Prework - Platzi">
+                <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/8.curso-prework.png" alt="Certificado curso de Prework - Platzi">
               </figure>
               <span class="ProjPlatzi-button">
-                <a href="https://platzi.com/p/yajayra-arauco-flores/curso/1650-course/diploma/detalle/" target="_blank" >Ver más</a>
+                <a alt="ver cerificado de curso de Prework" href="https://platzi.com/p/yajayra-arauco-flores/curso/1650-course/diploma/detalle/" target="_blank" rel="noopener noreferrer" >Ver más</a>
               </span>
             </div>
 
             <div class="ProjPlatzi-curso">
               <figure class="ProjPlatzi-certificado">
-                <img src="./assets/formacion-platzi/3.estrategias-para-aprender-ingles-online.png" alt="Certificado de Estrategias para aprender inglés onle">
+                <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/3.estrategias-para-aprender-ingles-online.png" alt="Certificado de Estrategias para aprender inglés online">
               </figure>
               <span class="ProjPlatzi-button">
-                <a href="https://platzi.com/p/yajayra-arauco-flores/curso/1944-course/diploma/detalle/" target="_blank" >Ver más</a>
+                <a alt="ver cerificado de Estrategias para aprender inglés online" href="https://platzi.com/p/yajayra-arauco-flores/curso/1944-course/diploma/detalle/" target="_blank" rel="noopener noreferrer" >Ver más</a>
               </span>
             </div>
                        
             <div class="ProjPlatzi-curso">
              <figure class="ProjPlatzi-certificado">
-               <img src="./assets/formacion-platzi/2.aprender-en-linea-efectivamente.png" alt="Certificado de curso para aprender en línea efectivamente - Platzi">
+               <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/2.aprender-en-linea-efectivamente.png" alt="Certificado de curso para aprender en línea efectivamente - Platzi">
              </figure>
              <span class="ProjPlatzi-button">
-               <a href="https://platzi.com/p/yajayra-arauco-flores/curso/1608-course/diploma/detalle/" target="_blank" >Ver más</a>
+               <a alt="ver cerificado de curso para aprender en línea efectivamente" href="https://platzi.com/p/yajayra-arauco-flores/curso/1608-course/diploma/detalle/" target="_blank" rel="noopener noreferrer" >Ver más</a>
              </span>
            </div>
 
             <div class="ProjPlatzi-curso">
              <figure class="ProjPlatzi-certificado">
-               <img src="./assets/formacion-platzi/15.beginners.png" alt="Certificado English Cours for beginners - Platzi">
+               <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/15.beginners.png" alt="Certificado English Cours for beginners - Platzi">
              </figure>
              <span class="ProjPlatzi-button">
-               <a href="https://platzi.com/p/yajayra-arauco-flores/curso/1945-course/diploma/detalle/" target="_blank" >Ver más</a>
+               <a alt="ver cerificado de English Cours for beginners" href="https://platzi.com/p/yajayra-arauco-flores/curso/1945-course/diploma/detalle/" target="_blank" rel="noopener noreferrer" >Ver más</a>
              </span>
            </div>
 
             <div class="ProjPlatzi-curso">
              <figure class="ProjPlatzi-certificado">
-               <img src="./assets/formacion-platzi/16.workshop.png" alt="Certificado English workshop for beginners - Platzi">
+               <img width="512" height="395"loading="lazy" src="./assets/formacion-platzi/16.workshop.png" alt="Certificado English workshop for beginners - Platzi">
              </figure>
              <span class="ProjPlatzi-button">
-               <a href="https://platzi.com/p/yajayra-arauco-flores/curso/2005-course/diploma/detalle/" target="_blank" >Ver más</a>
+               <a alt="ver cerificado de English workshop for beginners" href="https://platzi.com/p/yajayra-arauco-flores/curso/2005-course/diploma/detalle/" target="_blank" rel="noopener noreferrer" >Ver más</a>
              </span>
            </div>
            
            <div class="ProjPlatzi-curso">
              <figure class="ProjPlatzi-certificado">
-               <img src="./assets/formacion-platzi/6.gestion-efectiva-del-tiempo.png" alt="CertificadoGestión Efectiva del Tiempo - Platzi">
+               <img width="512" height="395" loading="lazy" src="./assets/formacion-platzi/6.gestion-efectiva-del-tiempo.png" alt="Certificado Gestión Efectiva del Tiempo - Platzi">
              </figure>
              <span class="ProjPlatzi-button">
-               <a href="https://platzi.com/p/yajayra-arauco-flores/curso/1749-course/diploma/detalle/" target="_blank" >Ver más</a>
+               <a alt="ver cerificado de Gestión Efectiva del Tiempo" href="https://platzi.com/p/yajayra-arauco-flores/curso/1749-course/diploma/detalle/" target="_blank" rel="noopener noreferrer" >Ver más</a>
              </span>
            </div>
           </div>
@@ -379,25 +394,25 @@
       <p>Escríbeme a yajayra.arauco@gmail.com</p>
       <p>Contáctame</p>
       <div class="footer-container--social">
-        <a href="https://t.me/Yajayra18" target="_blank">
+        <a aria-label="contactar a Yajayra por telegram" alt="contactar a Yajayra por telegram" href="https://t.me/Yajayra18" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-telegram-plane"></i>
         </a>
-        <a href="https://wa.link/0eeqpc" target="_blank">
+        <a aria-label="contactar a Yajayra por whatsapp" alt="contactar a Yajayra por whatsapp" href="https://wa.link/0eeqpc" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="https://twitter.com/yaja_af" target="_blank">
+        <a aria-label="contactar a Yajayra por twitter" alt="contactar a Yajayra por twitter" href="https://twitter.com/yaja_af" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="www.linkedin.com/in/yajayra-arauco" target="_blank">
+        <a aria-label="visitar linkedin de Yajayra" alt="visitar linkedin de Yajayra" href="www.linkedin.com/in/yajayra-arauco" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://github.com/Yajayra18" target="_blank">
+        <a aria-label="visitar github de Yajayra" alt="visitar github de Yajayra"  href="https://github.com/Yajayra18" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github"></i>
         </a>
       </div>
     </section>
     <figure class="under-construction">
-      <img src="./assets/img/under-construction.png" alt="Pagina en construcción">
+      <img width="626" height="626" loading="lazy" src="./assets/img/under-construction.png" alt="Pagina en construcción">
     </figure>
     <section class="footer--makelove">
       <p>2021</p>
@@ -407,6 +422,7 @@
       </div>
     </section>
   </footer>
+  <script src="./js/lazy.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>
