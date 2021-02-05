@@ -1,10 +1,11 @@
 /*Header*/
 header {
-  height: 550px;
+  height: 600px;
   background-image: url(../assets/img/headerTablet.jpg);
   background-size: auto 140%;
 }
 
+/*Idiomas*/
 .header--idiomas-container p {
   font-size: 1.5rem;
 }
@@ -15,12 +16,16 @@ header {
   max-width: 130px;
 }
 
+/*nav*/
 .header--navigator-container a {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
-
+/*presentación*/
+.header--presentacion-container {
+  min-height: 250px;
+}
 .presentacion-text {
-  font-size: 1.7rem;
+  font-size: 2.3rem;
   line-height: 2.4rem;
 }
 
@@ -29,6 +34,7 @@ header {
 }
 
 /*Main-Resumen*/
+
 .main--summary-detail {
   min-height: 450px;
 
