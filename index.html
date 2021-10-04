@@ -7,18 +7,19 @@
   <meta name="robots" content="index,follow"/>
   <title>Yajayra</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css"/>
   <link rel="stylesheet"  href="./css/tablet.css" media="screen and (min-width: 760px)"/>
   <script src="https://kit.fontawesome.com/2351135cfa.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header class="lazy">
-    <div class="header--idiomas-container">
-      <p>
+    <span class="material-icons menu"> menu </span>
+    <p class="header--idiomas-container">
         <a alt="Versión en Inglés"  href="https://yajayra18.github.io/index">EN</a>
         <a alt="Versión en Español" href="https://yajayra18.github.io/index">ES</a>
-      </p>
-    </div>
+    </p>
     <picture class="header--logo-container">
       <source media="(min-width= 320px)" srcset="./assets/icon/tablet-logoyaja.png 1x"/>
       <source media="(min-width= 600px)" srcset="./assets/icon/tablet-logoyaja.png 10x"/>
@@ -30,6 +31,7 @@
         <img alt="Logo de Yajayra">
       </figure>
     -->
+     <!-- 
     <nav class="header--navigator-container">
       <ol>
         <li>
@@ -46,6 +48,7 @@
         </li>
       </ol>
     </nav>
+    -->
     <div class="header--presentacion-container">
     <!--
       <figure class="header--presentacion-foto">
@@ -57,17 +60,13 @@
         <source media="(min-with= 1000px)" srcset=""/>
         <img width="300" height="370" loading="lazy" src="./assets/img/1.mobile/mobile-Yajayra.jpg" alt="Foto de Yajayra">
       </picture>
-      <div class="header--presentacion-texto-boton">
-        <div class="presentacion-text">
-          <p>¡Hola! Soy Yajayra, <br/> Egresada de Psicóloga Organizacional <br/>con pasión por la Gestión Humana </p>
+      <p class="header--presentacion-texto">¡Hola! Soy Yajayra, <br/> Bachiller en Psicología <br/>con pasión por la Gestión Humana </p>
+        <div class="text-box">
+           <a alt="descargar cv" href="./cv/YajayraArauco-GestionHumana.pdf" download="YajayraArauco-GestiónHumana.pdf" class="btn btn-white btn-animate"> 
+            CV
+            <span class="material-icons download"> cloud_download </span>
+          </a>
         </div>
-        <div class="presentacion-button">
-          <div class="text-box">
-             <a alt="rescargar cv" href="./cv/YajayraArauco-GestionHumana.pdf" download="YajayraArauco-GestiónHumana.pdf" class="btn btn-white btn-animate"> Descargar CV
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
   </header>
   <main>
