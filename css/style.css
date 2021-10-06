@@ -253,40 +253,33 @@ header {
 */
 
 main {
-  display: none;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.main--experience-detail {
-  display: flex;
-  flex-wrap: wrap;
-  
-}
 .main--summary-detail {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 80px auto;
+  align-items: center;
   min-width: 320px;
   min-height: 300px;
   background-color: var(--off-cyan);
   color: var(--soft-cyan);
+  padding: 0 0 50px 0;
 }
 
 .summary-detail--title {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: 100%;
-  min-width: 288px;
-  height: 50px;
-}
-
-.summary-detail--title h2 {
+  grid-column: 1 / 4;
+  width: min-content;
+  justify-self: center;
   font-size: 2rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--soft-cyan);
 }
 
+/*
 .detail-cards--container {
   display: flex;
   align-items: center;
@@ -295,6 +288,17 @@ main {
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+}
+*/
+.detail-cards--container{
+  display: grid;
+  align-items: center;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(250px,1fr);
+  overflow-x: scroll;
+  padding: 0 calc(100vw - 400px);
 }
 
 .detail-cards--container::-webkit-scrollbar {
@@ -323,15 +327,17 @@ main {
 }
 
 .detail-cards--button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: calc(0.5*(100vw - 250px));
-}
-
-.detail-cards--button i {
+  justify-self: center;
   color: var(--cyan);
   font-size: 25px;
+}
+
+.izq {
+  grid-column: 1 / 2;
+}
+
+.der {
+  grid-column: 3 / 4;
 }
 
 .summary-title {
@@ -376,65 +382,25 @@ main {
 }
 
 .main--experience-detail {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  min-width: 320px;
-  height: 400px;
+  display: grid;
+  grid-template-rows: 80px repeat(5, 230px) 50px;
+  place-items: center;
   color: var(--dark-cyan);
-  background-image: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url('../assets/img/1.mobile/mobile-experiencia.jpg');
+  background-color: #03989E;
+  /*background-image: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url('../assets/img/1.mobile/mobile-experiencia.jpg');
+  */
   background-position: center;
   background-size: auto 120%;
   background-repeat: no-repeat;
 }
 
-.experience-detail--title {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: 100%;
-  min-width: 288px;
-  height: 50px;
-}
 
-.experience-detail--title h2 {
+.experience-detail--title {
+  justify-self: center;
   font-size: 2rem;
   font-weight: bold;
   line-height: 2.6rem;
-  color: var(--soft-cyan);
-}
-
-.detail-cards--buttonExp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: calc(0.5*(100vw - 236px));
-  font-size: 25px;
-}
-
-.detail-cards--buttonExp i {
-  color: var(--soft-cyan);
-  font-size: 25px;
-}
-
-.experience-cards--container {
-  display: flex;
-  align-items: center;
-  width: 236px;
-  min-height: 350px;
-  padding: 0 8px;
-  overflow-x: scroll;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
-}
-
-.experience-cards--container::-webkit-scrollbar {
-  display: none;
-}
-
-.experience-cards--container {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  color: var(--dark-cyan);
 }
 
 .experience-cards {
@@ -445,15 +411,13 @@ main {
   align-items: center;
   flex-direction: column;
   width:220px;
-  height: 223px;
-  margin-right: 16px; 
-  padding: 0 15px;
-  background-color: var(--cyan);
+  height: 150px;
+  background-color: var(--off-cyan);
   border-radius: 15px;
   box-shadow: 0 4px 8px var(--off-cyan);
   flex-shrink: 0;
 }
-
+/*
 .experience-cards:after {
   content: "";
   display: block;
@@ -461,7 +425,7 @@ main {
   right: -8px;
   width: 8px;
   height: 1px;
-}
+}*/
 
 .logo-container--card {
   position: absolute;
@@ -485,7 +449,8 @@ main {
   width: 77%;
   text-align: center;
   font-size: 1.1rem;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  color:var(--soft-cyan);
 }
 
 .experience-puesto {
@@ -498,7 +463,6 @@ main {
   justify-content: center;
   width: 118px;
   height: 30px;
-  margin-top: 10px;
   border-radius: 70px;
   background-color: var(--off-cyan);
 }
@@ -511,74 +475,25 @@ main {
 .logo-container--card .logo-cataliz {
   width: 35%;
 }
+/*Section Aditional*/
 
-.main--project-detail {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  min-width: 320px;
-  height: 400px;
+.main--aditional-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px repeat(2, 350px);
+  place-items: center;
   color: var(--off-cyan);
   background-color: var(--off-cyan);
 }
 
-.project-detail--title {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: 100%;
-  min-width: 288px;
-  height: 50px;
-}
-
-.project-detail--title h2 {
+.aditional-detail--title {
   font-size: 2rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--soft-cyan);
 }
 
-.detail-cards--buttonProj {
-  display: flex;
-  align-items: center;
-  width: calc(0.5*(100vw - 236px));
-  font-size: 25px;
-}
-
-.detail-cards--buttonProj--left {
-  justify-content: flex-end;
-}
-
-.detail-cards--buttonProj--right {
-  justify-content: flex-start;
-}
-
-.detail-cards--buttonProj i {
-  color: var(--cyan);
-  font-size: 25px;
-}
-
-.project-cards--container {
-  display: flex;
-  align-items: center;
-  width: 236px;
-  min-height: 350px;
-  padding: 0 13px;
-  overflow-x: scroll;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
-}
-
-.project-cards--container::-webkit-scrollbar {
-  display: none;
-}
-
-.project-cards--container {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-.project-cards {
+.aditional-cards {
   position: relative;
   display: flex;
   padding-top: 45px;
@@ -594,13 +509,104 @@ main {
   flex-shrink: 0;
 }
 
-.project-cards:after {
-  content: "";
-  display: block;
+.logo-container--proj {
   position: absolute;
-  right: -13px;
-  width: 13px;
-  height: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: var(--soft-cyan);
+  border-radius: 50px;
+  left: -13px;
+  top: -40px;
+}
+
+.logo-container--proj img {
+  width: 60%;
+  height: auto;
+}
+
+.aditional-description, .aditional-fecha {
+  width: 77%;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.aditional-container-img {
+  display: flex;
+  width:100%;
+  height: auto;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+}
+.aditional-img {
+  width: 100%;
+  height:150px;
+  box-shadow: 0 4px 8px var(--off-cyan);
+  object-fit: cover;
+}
+
+.aditional-container--social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+
+.aditional-container--social a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #242B7C;
+  text-decoration: none;
+}
+
+.aditional-container--social i {
+  width: 20px;
+  height: 20px;
+  color: var(--soft-cyan2);
+  font-size: 20px;
+  text-align: center;
+}
+
+/*Section Proyect*/
+.main--project-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px repeat(2, 350px);
+  place-items: center;
+  color: var(--off-cyan);
+  background-color: var(--cyan);
+}
+
+.project-detail--title {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--dark-cyan);
+}
+
+.project-cards {
+  position: relative;
+  display: flex;
+  padding-top: 45px;
+  scroll-snap-align: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width:210px;
+  height: 260px;
+  margin-right: 26px; 
+  background-color: var(--off-cyan);
+  color: var(--soft-cyan2);
+  border-radius: 15px;
+  flex-shrink: 0;
 }
 
 .logo-container--proj {
@@ -657,20 +663,20 @@ main {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background: #242B7C;
+  background: var(--soft-cyan2);
   text-decoration: none;
 }
 
 .project-container--social i {
   width: 20px;
   height: 20px;
-  color: var(--soft-cyan2);
+  color: var(--off-cyan);
   font-size: 20px;
   text-align: center;
 }
 /*Project Platzi*/
 .main--proyectos-platzi-detail {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   width: 100%;
   min-width: 320px;
