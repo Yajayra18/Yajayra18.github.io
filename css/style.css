@@ -273,7 +273,7 @@ main {
   grid-column: 1 / 4;
   width: min-content;
   justify-self: center;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--soft-cyan);
@@ -397,7 +397,7 @@ main {
 
 .experience-detail--title {
   justify-self: center;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--dark-cyan);
@@ -503,7 +503,6 @@ main {
   flex-direction: column;
   width:210px;
   height: 260px;
-  margin-right: 26px; 
   background-color: var(--soft-cyan2);
   border-radius: 15px;
   flex-shrink: 0;
@@ -601,8 +600,7 @@ main {
   align-items: center;
   flex-direction: column;
   width:210px;
-  height: 260px;
-  margin-right: 26px; 
+  height: 260px; 
   background-color: var(--off-cyan);
   color: var(--soft-cyan2);
   border-radius: 15px;
@@ -676,44 +674,35 @@ main {
 }
 /*Project Platzi*/
 .main--proyectos-platzi-detail {
-  display: none;
-  flex-wrap: wrap;
-  width: 100%;
-  min-width: 320px;
-  height: 420px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 50px 80px auto;
+  height: 480px;
   color: var(--soft-cyan);
-  background-image:  linear-gradient(180deg, rgba(255, 255, 255, 0) 27.08%, #03989E 80.73%), url('../assets/img/1.mobile/mobile-formacion.jpg');
-  background-position: center;
+  /*background-image:  linear-gradient(180deg, rgba(255, 255, 255, 0) 27.08%, #03989E 80.73%), url('../assets/img/1.mobile/mobile-formacion.jpg');*/
+  background-color: var(--off-cyan);
+  /*background-position: center;
   background-size: auto 120%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+}
+
+.platzi-detail--title {
+  grid-column: 1 / 4;
+  align-self: flex-end;
+  width: max-content;
+  justify-self: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--soft-cyan);
 }
 
 .detail-cards--buttonProjPlatzi {
-  display: flex;
-  align-items: center;
-  width: calc(0.5*(100vw - 236px));
   font-size: 25px;
-}
-
-.detail-cards--buttonProjPlatzi--left {
-  justify-content: flex-end;
-}
-
-.detail-cards--buttonProjPlatzi--right {
-  justify-content: flex-start;
-}
-
-.detail-cards--buttonProjPlatzi i {
-  color: var(--off-cyan);
-  font-size: 25px;
-}
-
-.ProjPlatzi-cards--container {
-  display: flex;
-  align-items: center;
-  width: 236px;
-  min-height: 360px;
-  padding: 0 13px;
+  align-self: center;
+  justify-self: center;
+  color: var(--cyan);
 }
 
 .ProjPlatzi-cards {
@@ -724,27 +713,16 @@ main {
   flex-direction: column;
   width:210px;
   height: 300px;
-  margin-right: 26px; 
   background-color: none;
   border-radius: 15px;
-  box-shadow: -1px 5px 8px var(--off-cyan);
+  box-shadow: -1px 5px 20px var(--cyan);
 }
 
-.logo-container--card-ProjPlat {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  background: var(--soft-cyan);
-  border-radius: 50px;
-  left: -13px;
-  top: -40px;
-}
 
-.logo-container--card-ProjPlat img {
-  width: 60%;
+.logo-container--card-ProjPlat{
+  grid-column: 1 / 4;
+  justify-self: center;
+  width: 30%;
   height: auto;
 }
 
@@ -755,7 +733,7 @@ main {
   font-size: 1.4rem;
   font-weight: bolder;
   margin-bottom: 15px;
-  color: var(--off-cyan);
+  color: var(--cyan);
 }
 
 .Certificate-container {
@@ -769,10 +747,6 @@ main {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   padding: 0 12px;;
-}
-
-.Certificate-container::-webkit-scrollbar {
-  display: none; /*chrome and opera*/
 }
 
 .ProjPlatzi-curso {
@@ -818,7 +792,7 @@ main {
   height: 30px;
   margin-top: 15px;
   border-radius: 70px;
-  background-color: var(--off-cyan);
+  background-color: var(--off-gray);
 }
 
 .ProjPlatzi-button a {
@@ -828,10 +802,7 @@ main {
 }
 
 footer {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
   min-height: 320px;
 }
 
