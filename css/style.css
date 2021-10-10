@@ -49,10 +49,11 @@ header {
 .menu {
   grid-column: 1 / 2;
   color: var(--soft-cyan);
+  font-size: 50px;
 }
 
 .header--idiomas-container {
-  grid-column: 6 / 7;
+  grid-column: 5 / 7;
 }
 
 .header--idiomas-container a{
@@ -83,8 +84,8 @@ header {
 }
 
 .header--logo-container img{
-  width: 70px;
-  height: 70px;/*
+  width: 80px;
+  height: 80px;/*
   background-image: url("../assets/icon/mobile-logoyaja.png");*/
 }
 /*
@@ -133,7 +134,7 @@ header {
   justify-items: center;
   align-items: center;
   width: 100%;
-  min-height: 150px;
+  min-height: 220px;
   padding: 10px;
   background-color: var(--cyan);
 }
@@ -144,7 +145,6 @@ header {
 }
 
 .header--presentacion-foto img {
-  margin: 15px 0;
   height: auto;
   min-width: 100px;
   max-width: 150px;
@@ -383,7 +383,7 @@ main {
 
 .main--experience-detail {
   display: grid;
-  grid-template-rows: 80px repeat(5, 230px) 50px;
+  grid-template-rows: 80px repeat(5, 230px) 55px;
   place-items: center;
   color: var(--dark-cyan);
   background-color: #03989E;
@@ -392,6 +392,7 @@ main {
   background-position: center;
   background-size: auto 120%;
   background-repeat: no-repeat;
+  padding-bottom: 20px;
 }
 
 
@@ -441,7 +442,7 @@ main {
 }
 
 .logo-container--card img {
-  width: 50%;
+  width: 70%;
   height: auto;
 }
 
@@ -464,17 +465,23 @@ main {
   width: 118px;
   height: 30px;
   border-radius: 70px;
-  background-color: var(--off-cyan);
+  background-color: var(--soft-cyan);
 }
 .experience-button a {
-  color: var(--soft-cyan);
+  color: var(--off-cyan);
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.7rem;
 }
 
 .logo-container--card .logo-cataliz {
   width: 35%;
 }
+.logo-container--card .logo-ism {
+  width: 55%;
+}
+
+
 /*Section Aditional*/
 
 .main--aditional-detail {
