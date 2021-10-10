@@ -1,5 +1,9 @@
 /*Variables del DOM (Document Object Model).
 Js toma el elemento por el nombre de la clase (ByClassName)*/
+
+let gap = getComputedStyle(document.getElementsByClassName('detail-cards--container')[0]);
+gap = parseInt(gap.gridColumnGap.split('px')[0]);
+
 var botonIzquierdo = document.getElementsByClassName('fa-chevron-left');
 var botonDerecho = document.getElementsByClassName('fa-chevron-right');
 var containerCardResumen = document.getElementsByClassName('detail-cards--container');
