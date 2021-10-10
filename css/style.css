@@ -168,30 +168,28 @@ header {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   justify-self: end;
   width: 100px;
   height: 35px;
 }
 
 .text-box a{
-  display: flex;
-  text-align: center;
-  vertical-align: middle;
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: 1fr;
+  place-items: center;
+  place-content: center;
+  column-gap: 5px;
   width: 100px;
   height: 35px;
 }
 
 /*reacomodar*/
-.download{
-  display: inline-flex;
-  vertical-align: bottom;
-}
 
 .btn:link,
 .btn:visited {
   text-decoration: none;
-  display: inline-block;
   border-radius: 100px;
   transition: all .2s;
   position: absolute;
@@ -490,7 +488,7 @@ main {
 }
 
 .aditional-detail--title {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--soft-cyan);
@@ -592,7 +590,7 @@ main {
 }
 
 .project-detail--title {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--dark-cyan);
