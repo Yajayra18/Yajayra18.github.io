@@ -384,10 +384,9 @@ main {
   place-items: center;
   color: var(--dark-cyan);
   background-color: #03989E;
-  /*background-image: linear-gradient(180deg, #03989E 0%, rgba(255, 255, 255, 0) 73.96%), url('../assets/img/1.mobile/mobile-experiencia.jpg');
-  */
-  background-position: center;
-  background-size: auto 120%;
+  background-image: linear-gradient(180deg, #03989E 0%, #03989E 80%, rgba(255, 255, 255, 0) 100%), url('../assets/img/1.mobile/mobile-experiencia.jpg');
+  background-position: bottom;
+  background-size: 100vw auto;
   background-repeat: no-repeat;
   padding-bottom: 20px;
 }
