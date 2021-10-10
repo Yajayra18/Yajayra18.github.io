@@ -18,14 +18,8 @@ var containerCardProyectoPla = document.getElementsByClassName('Certificate-cont
 botonIzquierdo[0].addEventListener("click", desplazarIzquierdaResumen);
 botonDerecho[0].addEventListener("click", desplazarDerechaResumen);
 
-botonIzquierdo[1].addEventListener("click", desplazarIzquierdaExperiencia);
-botonDerecho[1].addEventListener("click", desplazarDerechaExperiencia);
-
-botonIzquierdo[2].addEventListener("click", desplazarIzquierdaProyecto);
-botonDerecho[2].addEventListener("click", desplazarDerechaProyecto);
-
-botonIzquierdo[3].addEventListener("click", desplazarIzquierdaProyectoPla);
-botonDerecho[3].addEventListener("click", desplazarDerechaProyectoPla);
+botonIzquierdo[1].addEventListener("click", desplazarIzquierdaProyectoPla);
+botonDerecho[1].addEventListener("click", desplazarDerechaProyectoPla);
 
 /*Funciones de scrollhorizontal para el contenedor de las tarjetas(containerCardResumen)*/
 function desplazarIzquierdaResumen(){
