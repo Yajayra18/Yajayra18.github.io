@@ -3,19 +3,41 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Esta página te mostrará el resumen de Yajayra Arauco, egresada de psicología organizacional con experiencia en gestión del talento"/>
+  <meta name="description" content="Esta página te mostrará perfil profesional de Yajayra Arauco, bachiller de psicología organizacional con experiencia en gestión del talento"/>
   <meta name="robots" content="index,follow"/>
-  <title>Yajayra</title>
+  <title>Perfil de Yajayra</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/style.css" media="screen and (min-width: 320px)"/>
   <link rel="stylesheet"  href="./css/tablet.css" media="screen and (min-width: 760px)"/>
+  <link rel="stylesheet" href="./css/destokp.css" media="screen and (min-width: 1024px"/>
   <script src="https://kit.fontawesome.com/2351135cfa.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header class="lazy">
-    <span class="material-icons menu"> menu </span>
+  <header class="lazy container">
+    <nav class="header--navigator-container"> 
+      <label for="checkbox_toggle" class="hamburger">
+        <span class="material-icons menu"> menu </span>
+      </label>
+      <input type="checkbox" id="checkbox_toggle"/>
+      <div class="navigator-menu">
+        <ol>
+          <li>
+            <a alt="ir a sección resumen" href="#resumen">  Resumen  </a>
+          </li>
+          <li>
+            <a alt="ir a sección experiencia" href="#experiencia">Experiencia</a>
+          </li>
+          <li>
+            <a alt="ir a sección proyectos"  href="#proyectos">Proyectos</a>
+          </li>
+          <li>
+            <a alt="ir a sección trabajemos juntos" href="#contacto">Trabajemos juntos</a>
+          </li>
+        </ol>
+      </div>
+    </nav>
     <p class="header--idiomas-container">
         <a alt="Versión en Inglés"  href="https://yajayra18.github.io/index">EN</a>
         <a alt="Versión en Español" href="https://yajayra18.github.io/index">ES</a>
@@ -30,24 +52,6 @@
       <figure class="header--logo-container">
         <img alt="Logo de Yajayra">
       </figure>
-    -->
-     <!-- 
-    <nav class="header--navigator-container">x
-      <ol>
-        <li>
-          <a alt="ir a sección resumen" href="#resumen">  Resumen  </a>
-        </li>
-        <li>
-          <a alt="ir a sección experiencia" href="#experiencia">Experiencia</a>
-        </li>
-        <li>
-          <a alt="ir a sección proyectos"  href="#proyectos">Proyectos</a>
-        </li>
-        <li>
-          <a alt="ir a sección trabajemos juntos" href="#contacto">Trabajemos juntos</a>
-        </li>
-      </ol>
-    </nav>
     -->
     <div class="header--presentacion-container">
     <!--
@@ -70,7 +74,7 @@
     </div>
   </header>
   <main>
-    <section id="resumen" class="main--summary-detail">
+    <section id="resumen" class="main--summary-detail container">
       <h2 class="summary-detail--title"> Resumen </h2>
       <i class="fas fa-chevron-left detail-cards--button izq"></i>
       <section class="detail-cards--container">
@@ -94,7 +98,7 @@
             <i class="fas fa-university"></i>
           </span>
           <h2 class="summary-title">Educación</h2>
-          <p class="summary-time">Egresada de Psicología Organizacional</p>
+          <p class="summary-time">Bachiller en Psicología</p>
           <div class="resumen-list">
             <ul>
               <li>Puebas Psicométricas</li>
@@ -125,7 +129,7 @@
       </section>
       <i class="fas fa-chevron-right detail-cards--button der"></i>
     </section>
-    <section id="experiencia" class="main--experience-detail lazy">
+    <section id="experiencia" class="main--experience-detail lazy container">
       <h2 class="experience-detail--title"> Experiencia</h2>
       <article class="experience-cards">
         <figure class="logo-container--card">
@@ -166,16 +170,16 @@
         <a alt="Ver todas las experiecias laborales" href="./underconstruction/index.html">Ver más</a>
       </span>
     </section>
-    <section id="exp-adicionales" class="main--aditional-detail">
+    <section id="exp-adicionales" class="main--aditional-detail container">
       <h2 class="aditional-detail--title"> Experiencias Adicionales </h2>
-      <article class="aditional-cards experis">
+      <article class="aditional-cards">
         <figure class="logo-container--proj">
           <img width="500" height="588" loading="lazy" src="./assets/icon/experis.png" alt="Logo de Experis">
         </figure>
-        <p class="aditional-description">Free lance en atracción del Talento</p>
+        <p class="aditional-description">Free lance en Atracción del Talento</p>
         <p class="aditional-fecha">Abril - mayo 2021</p>
         <figure class="aditional-container-img">
-          <img width="512" height="384" loading="lazy" class="aditional-img" src="./assets/img/banner-experis.jpg" alt="Foto de Feria Laboral">
+          <img width="512" height="384" loading="lazy" class="aditional-img experis" src="./assets/img/banner-experis.jpg" alt="Imagen referencial de Experis">
         </figure>
       </article>
       <article class="aditional-cards">
@@ -185,13 +189,13 @@
         <p class="aditional-description">Feria Laboral en la  Universidad PUCP, representanto a KPMG</p>
         <p class="aditional-fecha">Septiembre 2017</p>
         <figure class="aditional-container-img">
-          <img width="512" height="384" loading="lazy" class="aditional-img" src="./assets/img/feriaKPMG.jpg" alt="Foto de Feria Laboral">
+          <img width="512" height="384" loading="lazy" class="aditional-img kpmg" src="./assets/img/feriaKPMG.jpg" alt="Foto de Feria Laboral">
         </figure>
       </article>
     </section>
-    <section id="proyectos" class="main--project-detail">
+    <section id="proyectos" class="main--project-detail container">
       <div class="project-detail--title"> Proyectos </div>
-      <article class="project-cards">
+      <article class="project-cards proideas">
         <figure class="logo-container--proj">
           <img width="500" height="588" loading="lazy" src="./assets/icon/Proideas1.png" alt="Logo de Proideas">
         </figure>
@@ -209,18 +213,15 @@
           </a>
         </div>
       </article>
-      <article class="project-cards">
-        <figure class="logo-container--proj">
-          <img width="500" height="221" loading="lazy" src="./assets/icon/logoyaja.png" alt="Logo de KPMG">
+      <article class="project-cards miweb">
+        <figure class="logo-container--proj web">
+          <img width="500" height="221" loading="lazy" src="./assets/icon/logoyaja.png" alt="Logo de web Yajayra">
         </figure>
         <p class="project-description">Mi Perfil Profesional Web</p>
         <p class="project-fecha">2021</p>
-        <figure class="project-container-img">
-          <img width="512" height="384" loading="lazy" class="project-img" src="./assets/img/feriaKPMG.jpg" alt="Foto de Feria Laboral">
-        </figure>
       </article>
     </section>
-    <section class="main--proyectos-platzi-detail">
+    <section class="main--proyectos-platzi-detail container">
       <h2 class="platzi-detail--title"> Formación con</h2>
       <img class="logo-container--card-ProjPlat" width="412" height="412" loading="lazy" src="./assets/icon/platzi.png" alt="Logo de Platzi">
       <i class="fas fa-chevron-left detail-cards--buttonProjPlatzi detail-cards--buttonProjPlatzi--left"></i>
@@ -372,21 +373,14 @@
           
         </div>
       </section>
-      <i class="fas fa-chevron-right detail-cards--buttonProjPlatzi"></i>
+      <i class="fas fa-chevron-right detail-cards--buttonProjPlatzi detail-cards--buttonProjPlatzi--right"></i>
     </section>
   </main>
   <footer id="contacto">
-    <section class="footer--work-together">
+    <section class="footer--work-together container">
       <h2>¿Trabajamos juntos?</h2>
-      <p>Escríbeme a yajayra.arauco@gmail.com</p>
       <p>Contáctame</p>
       <div class="footer-container--social">
-        <a aria-label="contactar a Yajayra por telegram" alt="contactar a Yajayra por telegram" href="https://t.me/Yajayra18" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-telegram-plane"></i>
-        </a>
-        <a aria-label="contactar a Yajayra por whatsapp" alt="contactar a Yajayra por whatsapp" href="https://wa.link/0eeqpc" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-whatsapp"></i>
-        </a>
         <a aria-label="contactar a Yajayra por twitter" alt="contactar a Yajayra por twitter" href="https://twitter.com/yaja_af" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-twitter"></i>
         </a>
@@ -401,11 +395,11 @@
     <figure class="under-construction">
       <img width="626" height="626" loading="lazy" src="./assets/img/under-construction.png" alt="Pagina en construcción">
     </figure>
-    <section class="footer--makelove">
+    <section class="footer--makelove container">
       <p>2021</p>
-      <div>
-        <p>Hecho con amor por Yajayra</p>
-        <i class="fas fa-heart"></i>
+      <div class="makelove--description">
+        <p>Hecho con amor por Yajayra <i class="fas fa-heart"></i></p>
+        
       </div>
     </section>
   </footer>
